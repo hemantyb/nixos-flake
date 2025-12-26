@@ -3,16 +3,10 @@
 {
 
   environment.systemPackages = with pkgs; [
-    vlc
     mpv
+		brave
     ghostty
-    nixfmt-rfc-style
-
-    # gnome tweaks
-    adwaita-qt
-    gnome-tweaks
-    gnome-themes-extra
-    gnome-extension-manager
+		nwg-look
 
     # for niri
     fuzzel
@@ -37,19 +31,18 @@
     fastfetch
 
     # utils
-    git
     gdu
     acpi
     inxi
     wget
     curl
-    x264
+    # x264
     mesa
     stow
     unrar
     unzip
     wmctrl
-    ffmpeg
+    # ffmpeg
     ripgrep
     pciutils
     usbutils
@@ -65,27 +58,15 @@
 
     # development
     httpie
-    vscode
-    mysql84
     zed-editor
-    httpie-desktop
-    mysql-workbench
 
     # language and runtimes
-    go
-    zig
     gcc
-    clang
     meson
     ninja
     cmake
-    rustup
     gnumake
-    nodejs
     python3
-    libdvdread
-    pkg-config
-    javaPackages.compiler.temurin-bin.jdk-25
 
     # screen recorder
     wl-screenrec
@@ -98,13 +79,4 @@
     font-awesome
     noto-fonts-color-emoji
   ];
-
-  environment.gnome.excludePackages = with pkgs; [
-    yelp
-    xterm
-    geary
-    gnome-tour
-    gnome-contacts
-  ];
-
 }

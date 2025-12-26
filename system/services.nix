@@ -1,11 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  services.desktopManager.gnome.enable = true;
-  services.displayManager.gdm = {
-    enable = true;
-    wayland = true;
-  };
+	services.displayManager.ly.enable = true;
 
   services.printing.enable = true;
 
@@ -25,9 +21,4 @@
   };
 
   services.openssh.enable = true;
-
-  services.mysql = {
-    enable = true;
-    package = pkgs.mysql84; # Uses the default/latest stable MySQL in nixpkgs
-  };
 }
