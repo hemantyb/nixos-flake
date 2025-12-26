@@ -3,10 +3,12 @@
 {
 
   environment.systemPackages = with pkgs; [
+    tree
     mpv
 		brave
     ghostty
 		nwg-look
+    zed-editor
 
     # for niri
     fuzzel
@@ -17,33 +19,14 @@
     brightnessctl
     xwayland-satellite
 
-    # cli
-    bat
-    tree
-    btop
-    htop
-    dysk
-    cyme
-    cava
-    bottom
-    cmatrix
-    tealdeer
-    fastfetch
-
     # utils
     gdu
     acpi
     inxi
     wget
     curl
-    # x264
     mesa
     stow
-    unrar
-    unzip
-    wmctrl
-    # ffmpeg
-    ripgrep
     pciutils
     usbutils
     virtualgl
@@ -56,27 +39,19 @@
     wayland-utils
     unixtools.ifconfig
 
-    # development
-    httpie
-    zed-editor
-
-    # language and runtimes
-    gcc
-    meson
-    ninja
-    cmake
-    gnumake
-    python3
-
     # screen recorder
     wl-screenrec
     intel-gmmlib
     intel-media-driver
     intel-vaapi-driver
+  ];
 
-    # fonts
+	fonts.packages = with pkgs; [
     symbola
     font-awesome
     noto-fonts-color-emoji
-  ];
+		nerd-fonts.fira-code
+		nerd-fonts.jetbrains-mono
+	]
+
 }

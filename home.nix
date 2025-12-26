@@ -10,13 +10,28 @@
   home.username = "eman";
   home.homeDirectory = "/home/eman";
 
-  # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
-    zip
     xz
+    zip
+    unrar
     unzip
     p7zip
+		zsh
+    bat
+    btop
+    htop
+    dysk
+    cyme
+    cava
+    bottom
+    cmatrix
+    tealdeer
+    fastfetch
     oh-my-zsh
+		nixpkgs-fmt
+		ripgrep
+		gcc
+		nodejs
     # inputs.zen-browser.packages."${system}".specific
   ];
 
