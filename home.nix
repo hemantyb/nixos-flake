@@ -11,7 +11,6 @@
 		./home/config.nix
     ./home/packages.nix
     ./home/programs.nix
-    ./home/services.nix
   ];
 
   home.username = "eman";
