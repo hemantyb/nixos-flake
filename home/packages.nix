@@ -23,6 +23,8 @@
 		ripgrep
 		gcc
 		nodejs
+		rustc
+		cargo
 		udiskie
   ];
 }
