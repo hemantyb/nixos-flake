@@ -4,7 +4,6 @@
   home.packages = with pkgs; [
     xz
     zip
-    unrar
     unzip
     p7zip
 		zsh
@@ -19,10 +18,10 @@
     tealdeer
     fastfetch
     oh-my-zsh
-		nixpkgs-fmt
+		nixfmt
 		ripgrep
 		gcc
 		nodejs
-    # inputs.zen-browser.packages."${system}".specific
+		udiskie
   ];
 }

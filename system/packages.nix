@@ -27,6 +27,7 @@
     curl
     mesa
     stow
+		ffmpeg
     pciutils
     usbutils
     virtualgl
@@ -38,12 +39,6 @@
     wl-clipboard
     wayland-utils
     unixtools.ifconfig
-
-    # screen recorder
-    wl-screenrec
-    intel-gmmlib
-    intel-media-driver
-    intel-vaapi-driver
   ];
 
 	fonts.packages = with pkgs; [
@@ -52,6 +47,6 @@
     noto-fonts-color-emoji
 		nerd-fonts.fira-code
 		nerd-fonts.jetbrains-mono
-	]
+	];
 
 }
