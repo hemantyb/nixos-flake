@@ -1,4 +1,4 @@
-{ config, pkgs, ...}:
+{ config, pkgs, ... }:
 
 let
 	dotfiles = "${config.home.homeDirectory}/nixos-flake/configs";
@@ -7,7 +7,12 @@ in
 
 {
 	xdg.configFile."waybar" = {
-		source = create_symlink "${dotfiles}/waybar";
+		source = create_symlink "${dotfiles}/waybar/";
+		recursive = true;
+	};
+
+	xdg.configFile."fuzzel" = {
+		source = create_symlink "${dotfiles}/fuzzel/";
 		recursive = true;
 	};
 }

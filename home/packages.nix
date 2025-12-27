@@ -18,6 +18,7 @@
     tealdeer
     fastfetch
     oh-my-zsh
+		nil
 		nixfmt
 		ripgrep
 		gcc
