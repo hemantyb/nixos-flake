@@ -213,7 +213,7 @@ layout {
 }
 
 spawn-sh-at-startup "wlsunset -S 17:00 -s 06:00 -T 6500 -t 4000"
-spawn-sh-at-startup "swaybg -i ~/wallpapers/Space-Nebula.png"
+spawn-sh-at-startup "swaybg -i ~/wallpapers/nixos.png"
 hotkey-overlay {
  // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
     // skip-at-startup

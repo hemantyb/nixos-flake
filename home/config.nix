@@ -6,13 +6,13 @@ let
 in
 
 {
-	xdg.configFile."niri" = {
-		source = create_symlink "${dotfiles}/niri/";
+	xdg.configFile."waybar" = {
+		source = create_symlink "${dotfiles}/waybar/";
 		recursive = true;
 	};
 
-	xdg.configFile."waybar" = {
-		source = create_symlink "${dotfiles}/waybar/";
+	xdg.configFile."niri" = {
+		source = create_symlink "${dotfiles}/niri/";
 		recursive = true;
 	};
 
