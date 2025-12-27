@@ -3,10 +3,10 @@
 {
 
   environment.systemPackages = with pkgs; [
-    tree
     mpv
 		brave
     ghostty
+		nautilus
 		nwg-look
     zed-editor
 
@@ -21,6 +21,7 @@
 
     # utils
     gdu
+    tree
     acpi
     inxi
     wget
@@ -28,17 +29,11 @@
     mesa
     stow
 		ffmpeg
-    pciutils
     usbutils
-    virtualgl
-    lm_sensors
-    gpu-viewer
     egl-wayland
     vulkan-tools
-    virtualglLib
     wl-clipboard
     wayland-utils
-    unixtools.ifconfig
   ];
 
 	fonts.packages = with pkgs; [
@@ -48,5 +43,4 @@
 		nerd-fonts.fira-code
 		nerd-fonts.jetbrains-mono
 	];
-
 }

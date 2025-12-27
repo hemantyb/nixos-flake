@@ -212,6 +212,7 @@ layout {
     }
 }
 
+spawn-at-startup "udiskie"
 spawn-sh-at-startup "wlsunset -S 17:00 -s 06:00 -T 6500 -t 4000"
 spawn-sh-at-startup "swaybg -i ~/wallpapers/nixos.png"
 hotkey-overlay {
