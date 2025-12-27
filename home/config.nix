@@ -15,4 +15,9 @@ in
 		source = create_symlink "${dotfiles}/fuzzel/";
 		recursive = true;
 	};
+
+	xdg.configFile."ghostty" = {
+		source = create_symlink "${dotfiles}/ghostty/";
+		recursive = true;
+	};
 }
