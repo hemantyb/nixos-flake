@@ -19,7 +19,7 @@
       plugins = [ "git" "z"];
     };
     enableCompletion = true;
-    autoSuggestions.enable = true;
+    autosuggestions.enable = true;
     syntaxHighlighting.enable = true;
   };
 }
