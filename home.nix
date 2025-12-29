@@ -1,12 +1,4 @@
 {
-  config,
-  pkgs,
-  system,
-  inputs,
-  ...
-}:
-
-{
   imports = [
     ./home/config.nix
     ./home/packages.nix

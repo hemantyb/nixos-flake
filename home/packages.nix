@@ -17,6 +17,7 @@
     tealdeer
     fastfetch
     nil
+    nixd
     nixfmt
     ripgrep
     gcc
