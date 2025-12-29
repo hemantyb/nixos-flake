@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, ... }:
 
 let
   dotfiles = "${config.home.homeDirectory}/nixos-flake/configs";
@@ -23,6 +23,11 @@ in
 
   xdg.configFile."ghostty" = {
     source = create_symlink "${dotfiles}/ghostty/";
+    recursive = true;
+  };
+
+  xdg.configFile."helix" = {
+    source = create_symlink "${dotfiles}/helix/";
     recursive = true;
   };
 }
