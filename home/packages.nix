@@ -6,7 +6,6 @@
     zip
     unzip
     p7zip
-		zsh
     bat
     btop
     htop
@@ -17,14 +16,13 @@
     cmatrix
     tealdeer
     fastfetch
-    oh-my-zsh
-		nil
-		nixfmt
-		ripgrep
-		gcc
-		nodejs
-		rustc
-		cargo
-		udiskie
-  ];
+    nil
+    nixfmt
+    ripgrep
+    gcc
+    nodejs
+    rustc
+    cargo
+    udiskie
+    ];
 }

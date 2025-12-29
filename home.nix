@@ -8,7 +8,7 @@
 
 {
   imports = [
-		./home/config.nix
+    ./home/config.nix
     ./home/packages.nix
     ./home/programs.nix
   ];

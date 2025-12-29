@@ -4,10 +4,11 @@
 
   environment.systemPackages = with pkgs; [
     mpv
-		brave
+    brave
     ghostty
-		nautilus
-		nwg-look
+    nautilus
+    helix
+    nwg-look
     zed-editor
 
     # for niri
@@ -16,6 +17,7 @@
     wlogout
     wlsunset
     swaylock
+    swayidle
     brightnessctl
     xwayland-satellite
 
@@ -28,7 +30,7 @@
     curl
     mesa
     stow
-		ffmpeg
+    ffmpeg
     usbutils
     egl-wayland
     vulkan-tools

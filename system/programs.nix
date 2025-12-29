@@ -10,4 +10,15 @@
   programs.yazi.enable = true;
 
   nixpkgs.config.allowUnfree = true;
+
+  programs.zsh = {
+    enable = true;
+    ohMyZsh = {
+      enable = true;
+      theme = "robbyrussell";
+      plugins = [ "git", "z"];
+    }
+    enableCompletion = true;
+    autoSuggestions.enable = true;
+  }
 }

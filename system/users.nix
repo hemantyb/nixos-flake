@@ -1,3 +1,5 @@
+{ pkgs, ... };
+
 {
   users.users.eman = {
     isNormalUser = true;
@@ -6,5 +8,6 @@
       "networkmanager"
       "wheel"
     ];
+    shell = pkgs.zsh;
   };
 }

@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-	services.displayManager.ly.enable = true;
+  services.displayManager.ly.enable = true;
 
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
@@ -12,7 +12,6 @@
     pulse.enable = true;
   };
 
-	services.udisks2.enable = true;
-
+  services.udisks2.enable = true;
   services.openssh.enable = true;
 }
