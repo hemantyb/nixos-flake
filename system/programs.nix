@@ -16,7 +16,10 @@
     ohMyZsh = {
       enable = true;
       theme = "robbyrussell";
-      plugins = [ "git" "z"];
+      plugins = [
+        "git"
+        "z"
+      ];
     };
     enableCompletion = true;
     autosuggestions.enable = true;

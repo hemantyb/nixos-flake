@@ -24,5 +24,5 @@
     rustc
     cargo
     udiskie
-    ];
+  ];
 }

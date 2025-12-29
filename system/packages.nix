@@ -38,11 +38,11 @@
     wayland-utils
   ];
 
-	fonts.packages = with pkgs; [
+  fonts.packages = with pkgs; [
     symbola
     font-awesome
     noto-fonts-color-emoji
-		nerd-fonts.fira-code
-		nerd-fonts.jetbrains-mono
-	];
+    nerd-fonts.fira-code
+    nerd-fonts.jetbrains-mono
+  ];
 }
