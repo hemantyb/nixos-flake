@@ -19,6 +19,8 @@
     nil
     nixd
     nixfmt
+    sass
+    sassc
     ripgrep
     gcc
     nodejs
