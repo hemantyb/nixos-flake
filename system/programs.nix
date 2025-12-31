@@ -1,3 +1,5 @@
+{ pkgs, ... }:
+
 {
   programs.niri.enable = true;
   programs.xwayland.enable = true;
@@ -22,5 +24,12 @@
     enableCompletion = true;
     autosuggestions.enable = true;
     syntaxHighlighting.enable = true;
+  };
+
+  hardware.graphics = {
+    enable = true;
+    extraPackages = with pkgs; [
+      intel-vaapi-driver
+    ];
   };
 }
