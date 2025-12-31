@@ -21,13 +21,6 @@
 		"backlight",
 		"pulseaudio"
 	],
-	"hyprland/workspaces": {
-		"format": "{name}: {icon}",
-		"format-icons": {
-			"active": "",
-			"default": ""
-		}
-	},
 	"niri/workspaces": {
 		"format": "{icon}",
 		"format-icons": {

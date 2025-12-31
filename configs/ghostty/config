@@ -1,5 +1,5 @@
 font-size = 13
-theme = Atom
+theme = GitHub Dark
 #catppuccin-mocha
 shell-integration-features = no-cursor,sudo,no-title
 cursor-style = block
