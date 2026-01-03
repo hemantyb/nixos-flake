@@ -27,5 +27,6 @@
     rustc
     cargo
     udiskie
+    slides
   ];
 }

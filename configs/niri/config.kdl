@@ -248,6 +248,11 @@ block-out-from "screen-capture"
 // block-out-from "screencast"
 }
 
+window-rule {
+    match app-id=r#"ffplay"#
+    opacity 1.0
+}
+
 // Example: enable rounded corners for all windows.
 // (This example rule is commented out with a "/-" in front.)
 window-rule {
