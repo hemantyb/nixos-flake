@@ -2,10 +2,8 @@
 
 {
   home.packages = with pkgs; [
-    xz
     zip
     unzip
-    p7zip
     bat
     btop
     htop
@@ -20,6 +18,7 @@
     nixd
     nixfmt
     sass
+    libsass
     sassc
     ripgrep
     gcc

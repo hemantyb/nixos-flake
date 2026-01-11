@@ -9,7 +9,6 @@
     nautilus
     helix
     nwg-look
-    zed-editor
     wl-screenrec
 
     # for niri
