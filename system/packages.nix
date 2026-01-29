@@ -9,7 +9,7 @@
     nautilus
     helix
     nwg-look
-		mangowc
+    mangowc
     wl-screenrec
 
     # for niri
