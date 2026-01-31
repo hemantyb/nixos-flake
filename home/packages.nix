@@ -25,6 +25,7 @@
     nodejs
     rustc
     cargo
+    python3
     udiskie
     slides
   ];
