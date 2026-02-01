@@ -1,5 +1,5 @@
 font-size = 13
-theme = 3024 Night
+theme = Moonfly
 shell-integration-features = no-cursor,sudo,no-title
 cursor-style = block
 

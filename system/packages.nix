@@ -6,6 +6,7 @@
     mpv
     brave
     ghostty
+    alacritty
     nautilus
     helix
     nwg-look
