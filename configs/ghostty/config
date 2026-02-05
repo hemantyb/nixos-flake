@@ -1,5 +1,5 @@
 font-size = 13
-theme = Moonfly
+theme = Citruszest
 shell-integration-features = no-cursor,sudo,no-title
 cursor-style = block
 
