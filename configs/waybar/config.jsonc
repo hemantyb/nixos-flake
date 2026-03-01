@@ -8,7 +8,7 @@
 	"swap-icon-label": false,
 	"height": 42,
 	"modules-left": [
-		"niri/workspaces"
+		"ext/workspaces"
 	],
 	"modules-center": [
 		"clock"
@@ -21,7 +21,7 @@
 		"backlight",
 		"pulseaudio"
 	],
-	"niri/workspaces": {
+	"ext/workspaces": {
 		"format": "{icon}",
 		"format-icons": {
 			"default": "",

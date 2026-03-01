@@ -16,6 +16,11 @@ in
     recursive = true;
   };
 
+  xdg.configFile."mango" = {
+    source = create_symlink "${dotfiles}/mango/";
+    recursive = true;
+  };
+
   xdg.configFile."fuzzel" = {
     source = create_symlink "${dotfiles}/fuzzel/";
     recursive = true;
