@@ -21,11 +21,6 @@
     libsass
     sassc
     ripgrep
-    gcc
-    nodejs
-    rustc
-    cargo
-    python3
     udiskie
     slides
   ];

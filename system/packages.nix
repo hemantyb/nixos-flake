@@ -30,13 +30,9 @@
     wget
     curl
     mesa
-    stow
     ffmpeg
     usbutils
-    egl-wayland
-    vulkan-tools
     wl-clipboard
-    wayland-utils
   ];
 
   fonts.packages = with pkgs; [
