@@ -1,5 +1,8 @@
 {
-  services.displayManager.ly.enable = true;
+  services.displayManager.ly = {
+    enable = true;
+    x11Support = false;
+  };
 
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
