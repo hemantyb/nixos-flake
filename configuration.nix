@@ -34,5 +34,4 @@
     "nix-command"
     "flakes"
   ];
-
 }
