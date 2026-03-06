@@ -1,14 +1,10 @@
-{ pkgs, ... }:
-
-{
-
+{pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     mangowc
     mpv
     brave
     ghostty
     nautilus
-    helix
     nwg-look
     wl-screenrec
 

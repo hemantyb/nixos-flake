@@ -1,6 +1,4 @@
-{ pkgs, ... }:
-
-{
+{pkgs, ...}: {
   home.packages = with pkgs; [
     zip
     unzip
@@ -14,9 +12,6 @@
     cmatrix
     tealdeer
     fastfetch
-    nil
-    nixd
-    nixfmt
     sass
     libsass
     sassc
