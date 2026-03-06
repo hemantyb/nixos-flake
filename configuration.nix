@@ -1,11 +1,7 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ./system/bootloader.nix
-    ./system/packages.nix
-    ./system/programs.nix
-    ./system/services.nix
-    ./system/users.nix
+    ./system/default.nix
   ];
 
   networking.hostName = "nixos";
