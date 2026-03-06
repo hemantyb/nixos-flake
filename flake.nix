@@ -33,15 +33,16 @@
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.users.eman = {
-            imports = [./home/default.nix];
+            imports = [
+              ./home/default.nix
+              nvf.homeManagerModules.default
+            ];
             home.username = "eman";
             home.homeDirectory = "/home/eman";
             home.stateVersion = "25.11";
             programs.home-manager.enable = true;
           };
         }
-
-        nvf.nixosModules.default
       ];
     };
   };
