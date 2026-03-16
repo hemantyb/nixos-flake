@@ -189,6 +189,15 @@
         };
       };
 
+      treesitter = {
+        highlight = {
+          enable = true;
+        };
+        indent = {
+          enable = true;
+        };
+      };
+
       visuals = {
         nvim-web-devicons = {
           enable = true;
