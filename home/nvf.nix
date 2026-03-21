@@ -6,13 +6,16 @@
       viAlias = false;
       vimAlias = true;
       lineNumberMode = "number";
+      syntaxHighlighting = true;
+      undoFile.enable = true;
       options = {
         tabstop = 4;
-        shiftwidth = 2;
-        softtabstop = 2;
+        shiftwidth = 4;
+        softtabstop = 4;
         laststatus = 3;
         scrolloff = 8;
         expandtab = false;
+        smarttab = true;
         showmode = false;
         wrap = false;
         relativenumber = true;
@@ -149,27 +152,7 @@
       lsp = {
         enable = true;
         formatOnSave = true;
-        lspkind = {
-          enable = false;
-        };
-        lightbulb = {
-          enable = false;
-        };
-        lspsaga = {
-          enable = false;
-        };
-        trouble = {
-          enable = true;
-        };
-        lspSignature = {
-          enable = false;
-        };
-        otter-nvim = {
-          enable = false;
-        };
-        nvim-docs-view = {
-          enable = false;
-        };
+        inlayHints.enable = true;
       };
 
       languages = {
@@ -182,10 +165,58 @@
             enable = true;
           };
           lsp = {
+            enable = true;
             servers = [
               "nixd"
+              "nil"
             ];
           };
+          treesitter.enable = true;
+        };
+        clang = {
+          enable = true;
+          lsp.enable = true;
+          lsp.servers = ["clangd"];
+          treesitter.enable = true;
+        };
+        go = {
+          enable = true;
+          lsp.enable = true;
+          lsp.servers = ["gopls"];
+          treesitter.enable = true;
+          format.enable = true;
+          format.type = ["gofmt"];
+        };
+        zig = {
+          enable = true;
+          lsp.enable = true;
+          lsp.servers = ["zls"];
+          treesitter.enable = true;
+        };
+        html = {
+          enable = true;
+          format.enable = true;
+          lsp.enable = true;
+          treesitter = {
+            enable = true;
+            autotagHtml = true;
+          };
+        };
+        css = {
+          enable = true;
+          format.enable = true;
+          lsp.enable = true;
+          treesitter.enable = true;
+        };
+        tailwind = {
+          enable = true;
+          lsp.enable = true;
+        };
+        ts = {
+          enable = true;
+          lsp.enable = true;
+          format.enable = true;
+          treesitter.enable = true;
         };
       };
 
