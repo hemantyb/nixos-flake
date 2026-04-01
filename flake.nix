@@ -10,6 +10,11 @@
     };
 
     nvf.url = "github:notashelf/nvf";
+
+    mangowm = {
+      url = "github:mangowm/mango";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
@@ -17,6 +22,7 @@
     nixpkgs,
     home-manager,
     nvf,
+    mangowm,
     ...
   }: let
     system = "x86_64-linux";
@@ -43,6 +49,7 @@
             programs.home-manager.enable = true;
           };
         }
+        mangowm.nixosModules.mango
       ];
     };
   };

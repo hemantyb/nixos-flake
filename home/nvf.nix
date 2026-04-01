@@ -168,7 +168,6 @@
             enable = true;
             servers = [
               "nixd"
-              "nil"
             ];
           };
           treesitter.enable = true;

@@ -1,5 +1,6 @@
 {pkgs, ...}: {
   programs.niri.enable = true;
+  programs.mango.enable = true;
   programs.xwayland.enable = true;
 
   programs.waybar.enable = true;
