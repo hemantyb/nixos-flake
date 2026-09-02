@@ -1,8 +1,7 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   environment.systemPackages = with pkgs; [
     mpv
-    brave
-    ghostty
+    kitty
     nautilus
     nwg-look
     wl-screenrec
