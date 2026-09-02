@@ -1,29 +1,28 @@
-{pkgs, ...}: {
-  programs.niri.enable = true;
-  programs.mango.enable = true;
-  programs.xwayland.enable = true;
+{ pkgs, ... }: {
+  programs = {
+    niri.enable = true;
+    xwayland.enable = true;
+    waybar.enable = true;
+    tmux.enable = true;
+    yazi.enable = true;
 
-  programs.waybar.enable = true;
-  programs.neovim.enable = true;
-  programs.tmux.enable = true;
-  programs.yazi.enable = true;
+    zsh = {
+      enable = true;
+      ohMyZsh = {
+        enable = true;
+        theme = "robbyrussell";
+        plugins = [
+          "git"
+          "z"
+        ];
+      };
+      enableCompletion = true;
+      autosuggestions.enable = true;
+      syntaxHighlighting.enable = true;
+    };
+  };
 
   nixpkgs.config.allowUnfree = true;
-
-  programs.zsh = {
-    enable = true;
-    ohMyZsh = {
-      enable = true;
-      theme = "robbyrussell";
-      plugins = [
-        "git"
-        "z"
-      ];
-    };
-    enableCompletion = true;
-    autosuggestions.enable = true;
-    syntaxHighlighting.enable = true;
-  };
 
   hardware.graphics = {
     enable = true;
