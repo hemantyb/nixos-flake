@@ -1,7 +1,6 @@
 { pkgs, ... }: {
   programs = {
     niri.enable = true;
-    xwayland.enable = true;
     waybar.enable = true;
     tmux.enable = true;
     yazi.enable = true;
