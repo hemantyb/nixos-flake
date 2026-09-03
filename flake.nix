@@ -2,55 +2,51 @@
   description = "NixOS flake configuration";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
 
     home-manager = {
-      url = "github:nix-community/home-manager/release-25.11";
+      url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nvf.url = "github:notashelf/nvf";
-
-    mangowm = {
-      url = "github:mangowm/mango";
+    nvf = {
+      url = "github:notashelf/nvf";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = {
-    self,
-    nixpkgs,
-    home-manager,
-    nvf,
-    mangowm,
-    ...
-  }: let
-    system = "x86_64-linux";
-    pkgs = nixpkgs.legacyPackages.${system};
-  in {
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-      inherit system;
-      modules = [
-        ./configuration.nix
-        ./system/default.nix
+  outputs =
+    {
+      self,
+      nixpkgs,
+      home-manager,
+      nvf,
+    }:
+    let
+      system = "x86_64-linux";
+    in
+    {
+      nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+        inherit system;
+        modules = [
+          ./configuration.nix
 
-        home-manager.nixosModules.home-manager
-        {
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
-          home-manager.users.eman = {
-            imports = [
-              ./home/default.nix
-              nvf.homeManagerModules.default
-            ];
-            home.username = "eman";
-            home.homeDirectory = "/home/eman";
-            home.stateVersion = "25.11";
-            programs.home-manager.enable = true;
-          };
-        }
-        mangowm.nixosModules.mango
-      ];
+          home-manager.nixosModules.home-manager
+          {
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              users.eman = {
+                imports = [
+                  ./home/default.nix
+                  nvf.homeManagerModules.default
+                ];
+                home.stateVersion = "26.05";
+                programs.home-manager.enable = true;
+              };
+            };
+          }
+        ];
+      };
     };
-  };
 }
