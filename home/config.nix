@@ -1,7 +1,9 @@
-{config, ...}: let
+{ config, ... }:
+let
   dotfiles = "${config.home.homeDirectory}/nixos-flake/configs";
   create_symlink = path: config.lib.file.mkOutOfStoreSymlink path;
-in {
+in
+{
   xdg.configFile."waybar" = {
     source = create_symlink "${dotfiles}/waybar/";
     recursive = true;
@@ -12,18 +14,8 @@ in {
     recursive = true;
   };
 
-  xdg.configFile."mango" = {
-    source = create_symlink "${dotfiles}/mango/";
-    recursive = true;
-  };
-
   xdg.configFile."fuzzel" = {
     source = create_symlink "${dotfiles}/fuzzel/";
-    recursive = true;
-  };
-
-  xdg.configFile."ghostty" = {
-    source = create_symlink "${dotfiles}/ghostty/";
     recursive = true;
   };
 
